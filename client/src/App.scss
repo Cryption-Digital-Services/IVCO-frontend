@@ -1,0 +1,39 @@
+$backgroundDarkBlue: #1a1b23;
+$white: #f5f5f5;
+
+$gradientBlue: #2082e9;
+$gradientPurple: #9900ff;
+$fontHeading: 'Wavehaus Sans';
+$fontSubHeading: 'Wavehaus Sans';
+
+.loading-page,
+.metamask-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $backgroundDarkBlue;
+  color: $white;
+  font-family: $fontSubHeading;
+
+  .metamask-btn {
+    margin: 0 1rem;
+    background: linear-gradient(
+      58.88deg,
+      $gradientBlue -1.8%,
+      $gradientPurple 89.9%
+    );
+    color: white;
+    border-radius: 16px;
+    font-family: $fontSubHeading;
+    border-radius: 14px;
+    font-weight: bold;
+    outline: none;
+  }
+  .metamask-btn:hover {
+    background-image: linear-gradient($gradientPurple, $gradientPurple);
+  }
+  .metamask-btn:focus {
+    background-image: linear-gradient($gradientBlue, $gradientBlue);
+  }
+}

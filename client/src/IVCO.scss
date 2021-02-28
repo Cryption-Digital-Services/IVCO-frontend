@@ -1,0 +1,64 @@
+$white: #f5f5f5;
+$black: #121212;
+$darkBlue: #000064;
+$backgroundDarkBlue: #1a1b23;
+$gradientBlue: #2082e9;
+$gradientPurple: #9900ff;
+
+$fontHeading: 'Wavehaus Sans';
+$fontSubHeading: 'Wavehaus Sans';
+
+.navbar {
+  color: $white;
+  background-color: $backgroundDarkBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  .nav-heading {
+    color: $white;
+    font-family: $fontHeading;
+    font-size: 20px;
+    background: linear-gradient(to right, $gradientBlue, $gradientPurple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .nav-acc-btn {
+    background: linear-gradient(
+      58.88deg,
+      $gradientBlue -1.8%,
+      $gradientPurple 89.9%
+    );
+    color: white;
+    font-family: $fontSubHeading;
+    border-radius: 14px;
+    font-weight: bold;
+  }
+  .nav-acc-btn:hover {
+    color: white;
+    font-family: $fontSubHeading;
+    border-radius: 14px;
+    font-weight: bold;
+    background-image: linear-gradient($gradientPurple, $gradientPurple);
+  }
+  .nav-acc-btn:focus {
+    outline: none;
+    color: white;
+    font-family: $fontSubHeading;
+    border-radius: 14px;
+    font-weight: bold;
+    background-image: linear-gradient($gradientBlue, $gradientBlue);
+  }
+}
+
+.not-navbar {
+  min-height: 94vh;
+  padding: 2rem;
+  background-color: $backgroundDarkBlue;
+  color: $white;
+
+  .home-page-container {
+    min-height: 100vh;
+  }
+}
